@@ -9,13 +9,15 @@
       <input type="text" class="form-control" formControlName="name" />
     </div>
     <div class="col-auto">
-      <span customLabel [color]="color">Color</span>
+      <span customLabel [color]="color" [errors]="myForm.get('name')?.errors"
+        >Color</span
+      >
     </div>
   </div>
   <div class="row">
     <div class="col">
       <button class="btn btn-primary" (click)="changeColor()">
-        Cambiar color
+        Cambiar color 
       </button>
     </div>
   </div>
