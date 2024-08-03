@@ -2,7 +2,7 @@
   <li
     class="list-group-item"
     routerLinkActive="active"
-    *ngFor="let item of menuItems"
+    *ngFor="let item of menuItems()"
     [routerLink]="item.route"
   >
     {{ item.title }}
